@@ -33,7 +33,9 @@ export default function GameBoard({ handlePlayerChange, turns }){
                         <ol>
                             {row.map((playerSymbol, colIndex) => (
                                 <li key={colIndex}>
-                                    <button onClick={() => handlePlayerChange(rowIndex, colIndex)} disabled={playerSymbol !== null}>
+                                    <button onClick={() => 
+                                      handlePlayerChange(rowIndex, colIndex)}
+                                     disabled={playerSymbol !== null}>
                                         {playerSymbol}
                                     </button>
                                 </li>
