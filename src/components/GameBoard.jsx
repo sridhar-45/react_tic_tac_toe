@@ -6,7 +6,7 @@ const intialGameBoard = [
 
 export default function GameBoard(){
         return (
-            <ol id  = "game-board">
+            <ol id="game-board">
             {intialGameBoard.map((row, rowIndex) => (
                 <li key={rowIndex}>
                     <ol>
