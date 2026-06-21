@@ -1,5 +1,5 @@
 import Player from "./components/Player.jsx";
-
+import GameBoard  from "./components/GameBoard.jsx";
 export default function App() {
   return (
     <main>
@@ -9,6 +9,7 @@ export default function App() {
           <Player initialName="player 2" symbol="O" />
         </ol>
       </div>
+      <GameBoard />
     </main>
   );
 }

@@ -6,8 +6,8 @@ export default function Player({ initialName, symbol }) {
     const [playerName, setPlayerName] = useState(initialName);
 
     function handleEditClick() {
-        // setIsEditing(!isEditing);
-        setIsEditing(editing => !editing);  //schedules a state update to  true
+        // setIsEditing(!isEditing); // takes everytimme the initial value....
+        setIsEditing(editing => !editing);  //schedules a state update to  true  (access the latest udpatestate)
     }
 
     function handleChange(event){
